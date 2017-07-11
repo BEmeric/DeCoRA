@@ -1,0 +1,5 @@
+Panel Myogr
+
+python2.7 src/DeCoRA.py -i DeCoRA_input/ -o DeCoRA_output/ -r bedfile/gre_ag_cc_dis_retr_miof_myot_1_Regions_EB.bed -v -d 30 -w --intronics_regions t 10 10
+
+python2.7 src/DeCoRA.py -i DeCoRA_input/ -o DeCoRA_output/ -r bedfile/ROI_MyoGR_filtered_sorted_AGRN.bed -v -d 30 -w --intronics_regions t 10 10

@@ -1,0 +1,41 @@
+Readme DeCoRA
+File Date : 2017/01/09
+Author: Eméric BANKOLE
+
+Script changed in DeCoRA(v1.0):
+Date: 2017/01/09
+================
+
+	- DeCoRA.py => DeCoRA_BE_20170110.py
+	- sample.py => sample_BE_20170110.py
+		** complete header info in analysis, analysis hotspot, and report file (see README of Annotatic)
+		** make a function to rename each file producted by DeCoRA processing
+
+	- html.py => html_BE_20170110.py
+		** change file name tab or link in the DeCoRA web interface.
+		
+	NB: Check path to access intermediate file as bedfile, hotspot file and else in each changed file
+
+DeCoRA(v1.0) => DeCoRA(v1.0.3)
+
+Script changed in DeCoRA(v1.0.3)
+
+Date: 2017/05/29
+================
+
+	- DeCoRA_BE_20170110.py => DeCoRA_BE_20170524.py
+	Because of adding of new barcode (IonCode), computing of CNV has failed. So we made DeCoRA be able to recognize this barcode.
+	In the case the barcode was not detected, DeCoRA takes the full name of bam file. Thus we will fix it if this case appear.
+
+A DeCoRA standalone version was created and adapted for illumina data : DeCoRA_StandAlone_BE_20170524.py
+Don't use it on the pgm server.
+
+Date: 2017/06/01
+================
+
+	- gene.py => gene_BE_20170601.py
+Some exons are not covered so we compute depth coverage like this: total_depth) / length_gene
+So in the code for these exons not covered it is impossible to compute 0 / 0, thus in this case we consider 0 / 1 for depth coverage computing.
+
+DeCoRA(v1.0.3) version was not changed.
+
